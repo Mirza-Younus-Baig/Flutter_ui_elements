@@ -5,26 +5,71 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        alignment: Alignment.center,
-        color: Colors.deepOrangeAccent,
-//        width: 200.0,
-//        height: 100.0,
-//        margin: EdgeInsets.all(25.0),
-//        margin: EdgeInsets.only(left: 15.0, top: 35.0),
-//        padding: EdgeInsets.all(40.0),
-//        padding: EdgeInsets.only(left: 40.0, top: 10.0, bottom: 24.0),
-        child: Text(
-          "Flight",
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-              decoration: TextDecoration.none,
-              fontSize: 65.0,
-              fontFamily: 'Raleway',
-              fontWeight: FontWeight.w700,  // fontWeight: FontWeight.w300
-              // fontStyle: FontStyle.italic
-              color: Colors.white),
-        ),
-      ),
+          padding: EdgeInsets.only(left: 10.0, top: 40.0),
+          alignment: Alignment.center,
+          color: Colors.deepOrangeAccent,
+          child: Column(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "Spice Jet",
+                      textAlign: TextAlign.center,
+                      textDirection: TextDirection.ltr,
+                      style: TextStyle(
+                          decoration: TextDecoration.none,
+                          fontSize: 35.0,
+                          fontFamily: 'Raleway',
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white),
+                    ),
+                  ),
+                  Expanded(
+                    child: Text(
+                      "From Mumbai to Banglore via Hyderabad",
+                      textDirection: TextDirection.ltr,
+                      style: TextStyle(
+                          decoration: TextDecoration.none,
+                          fontSize: 20.0,
+                          fontFamily: 'Raleway',
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "Air India",
+                      textAlign: TextAlign.center,
+                      textDirection: TextDirection.ltr,
+                      style: TextStyle(
+                          decoration: TextDecoration.none,
+                          fontSize: 35.0,
+                          fontFamily: 'Raleway',
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white),
+                    ),
+                  ),
+                  Expanded(
+                    child: Text(
+                      "From Goa to Jaipur via Hyderabad",
+                      textDirection: TextDirection.ltr,
+                      style: TextStyle(
+                          decoration: TextDecoration.none,
+                          fontSize: 20.0,
+                          fontFamily: 'Raleway',
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white),
+                    ),
+                  ),
+                ],
+              )
+            ],
+          )),
     );
   }
 }
