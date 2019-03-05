@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
       child: Container(
           padding: EdgeInsets.only(left: 10.0, top: 40.0),
           alignment: Alignment.center,
-          color: Colors.deepOrangeAccent,
+          color: Colors.deepPurple,
           child: Column(
             children: <Widget>[
               Row(
@@ -67,9 +67,21 @@ class Home extends StatelessWidget {
                     ),
                   ),
                 ],
-              )
+              ),
+              FlightImageAsset()
             ],
           )),
+    );
+  }
+}
+
+class FlightImageAsset extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    AssetImage assetImage = AssetImage('images/flight.png');
+    Image image = Image(image: assetImage, width: 250.0, height: 250.0);
+    return Container(
+      child: image,
     );
   }
 }
